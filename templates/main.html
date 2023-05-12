@@ -1,0 +1,96 @@
+<html >
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>{{ title }} SenaL : Sentiment Analysis </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    
+    <section id="home">
+        <header class="header">
+            <a href="#"><img src="images/Senal1.png" alt=""><h4 >SenaL</h4></a>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#analyse">Analyse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cinque-terre-back.jpg);"></div>
+         <h1>Welcome to SenaL</h1>
+         <br><br> <h3><b>SenaL</b> is machine learning end to end flask web app for <b>"Sentiment Analysis" </b> model created using Scikit-learn &amp; VADER Sentiment.
+            <br><br> This application will help you in the sentiment analysis of your given statament/article.</li>
+            <br><br>This is very user friendly and only takes your input and in one click it give you the value.  
+         </h3>
+    
+    </section>
+    <section id="analyse"><h2>Analyse Sentiment<br> 
+        
+        <form method="POST" aria-placeholder="center" >
+            <br><br><textarea name="text1" placeholder="Enter you statements to analyize its sentiment......" rows="10" cols="109"></textarea><br><br>
+
+            <a href="#analyse"><input class="button" type="submit" ></a>
+        </form>
+        {% if final %}
+        <div>
+            <br>The Sentiment of<br> '{{ text1 }}' is {{ final }}% positive !<br>
+            
+        </div>
+    </div>
+  
+<div class="container">
+    <table class="table table-bordered">
+      <tr>
+        <th>SENTIMENT METRIC</th>
+        <th>SCORE</th> 
+      </tr>
+      <tr>
+        <td>Positive</td>
+        <td>{{text2}}</td>
+        
+      </tr>
+      <tr>
+        <td>Neutral</td>
+        <td>{{text3}}</td>
+        
+      </tr>
+      <tr>
+        <td>Negative</td>
+        <td>{{text5}}</td>
+        
+      </tr>
+      <tr>
+        <td>Compound</td>
+        <td>{{text4}}</td>
+        
+      </tr>
+    </table>
+    
+            {% else %}
+            <p></p>
+            {% endif %}
+        </div>
+  </h2>  
+    
+    </section>
+
+    <section id="contact"><h2>Made by <a class="link" href="https://github.com/kartikeymish">Kartikey Mishra &#127770;</a></h2></section>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
