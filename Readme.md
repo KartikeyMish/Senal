@@ -14,7 +14,7 @@ This tool can be more over use on the social media texts, tweets , captions , co
 - scikit-learn
 - requests
 
-To install aal the required libraries use following command in terminal.
+To install all the required libraries use following command in terminal.
 ```
 s pip install -r requirements.txt
 ```
