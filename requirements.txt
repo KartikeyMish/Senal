@@ -3,3 +3,4 @@ vaderSentiment
 nltk
 scikit-learn
 requests
+waitress
