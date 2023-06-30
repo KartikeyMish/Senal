@@ -1,6 +1,6 @@
 Flask==2.3.2
 Flask-Mail==0.9.1
-gunicorn==20.1.0
+gunicorn==19.7.1
 nltk==3.8.1
 scikit-learn==1.2.2
 vaderSentiment==3.3.2
