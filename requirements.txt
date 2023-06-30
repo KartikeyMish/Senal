@@ -1,4 +1,4 @@
-Flask==2.3.2
+Flask
 Flask-Mail==0.9.1
 gunicorn==19.7.1
 nltk==3.8.1
