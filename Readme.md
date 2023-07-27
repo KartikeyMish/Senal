@@ -7,7 +7,7 @@ SenaL is a powerful sentiment analysis tool built on Flask, a micro web framewor
 
 🎉 Check out the live demo of SenaL and try out the sentiment analysis on different texts!
 
-[https://senal.onrender.com](https://senal.onrender.com)
+[Deployement on AWS EC2](http://13.233.193.138:5000/)
 
 ## Features
 
