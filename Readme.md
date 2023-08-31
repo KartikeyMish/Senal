@@ -47,6 +47,18 @@ python app.py
 
 6. Access SenaL: 🌐 Open a web browser and go to http://localhost:5000 to access the SenaL user interface. Enter the text you want to analyze and click the "Submit" button to obtain sentiment analysis results.
 
+## Docker 🐳
+The project is dockerized for easy deployment and scalability. To run the app using Docker, use the following commands:
+
+1. Build the image 
+```
+docker build --pull --rm -f "Dockerfile" -t senal:latest "."
+```
+2. Run image
+```
+docker run --rm -d -p 80:80/tcp senal:latest 
+```
+
 ## Contributing
 
 🤝 Contributions to SenaL are welcome! If you encounter any bugs, issues, or have suggestions for improvements, please submit a GitHub issue. You can also submit pull requests with your proposed changes to contribute to the project.
